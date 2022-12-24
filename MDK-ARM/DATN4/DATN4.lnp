@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"datn4\startup_stm32f401xc.o"
+"datn4\main.o"
+"datn4\stm32f4xx_it.o"
+"datn4\stm32f4xx_hal_msp.o"
+"datn4\stm32f4xx_hal_i2c.o"
+"datn4\stm32f4xx_hal_i2c_ex.o"
+"datn4\stm32f4xx_hal_rcc.o"
+"datn4\stm32f4xx_hal_rcc_ex.o"
+"datn4\stm32f4xx_hal_flash.o"
+"datn4\stm32f4xx_hal_flash_ex.o"
+"datn4\stm32f4xx_hal_flash_ramfunc.o"
+"datn4\stm32f4xx_hal_gpio.o"
+"datn4\stm32f4xx_hal_dma_ex.o"
+"datn4\stm32f4xx_hal_dma.o"
+"datn4\stm32f4xx_hal_pwr.o"
+"datn4\stm32f4xx_hal_pwr_ex.o"
+"datn4\stm32f4xx_hal_cortex.o"
+"datn4\stm32f4xx_hal.o"
+"datn4\stm32f4xx_hal_exti.o"
+"datn4\stm32f4xx_hal_tim.o"
+"datn4\stm32f4xx_hal_tim_ex.o"
+"datn4\stm32f4xx_hal_uart.o"
+"datn4\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "DATN4\DATN4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DATN4.map" -o DATN4\DATN4.axf
